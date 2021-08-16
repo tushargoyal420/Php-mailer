@@ -1,0 +1,164 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  }
+  body{
+    /* background-color: rgb(223, 223, 223); */
+  }
+  
+  .navbar {
+    background-color: #171717;
+    padding: 0px 50px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: white;
+    width: calc(100vw - 100px);
+    position: fixed;
+      }
+      .navbar .logoside {
+        flex-basis: 30%;
+        }
+        .navbar .logoside .logotext {
+          font-family: "Harrington";
+          font-size: 28px;
+        }
+        .navbar .logoside .logotext2 {
+          font-family: "Harrington";
+          color: red;
+        }
+      .navbar .linkside {
+        flex-basis: 70%;
+        display: flex;
+        justify-content: flex-end;
+      }
+        .navbar .linkside ul {
+          list-style: none;
+          display: flex;
+        }
+          .navbar .linkside ul li {
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+            .navbar .linkside ul li a {
+              color: white;
+              text-decoration: none;
+              font-weight: 500;
+              letter-spacing: 0.7px;
+            }
+  
+      .signupbutton {
+        padding: 8px 20px;
+        /* border-radius: 7px; */
+        border: 2px solid red;
+        /* background-color: red; */
+      }
+      .signupbutton:hover {
+        background-color: red;
+      }
+  
+  /* content */
+  
+  .content{
+    /* background-color: red ; */
+    min-height: calc(100vh - 120px);
+    padding: 60px 50px 0px 50px;  
+    display: flex;
+    align-items: center;
+
+    background-image: url('../images/bg6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.homeheadingname{
+    font-size: 5vh;
+    color: white;
+    flex-basis: 20%;
+    }
+
+  
+  /* footer */
+  
+  .footer{
+    height: 60px;
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .socialmedia a{
+      margin: 0px 10px;
+      color:white;
+      font-size: 20px;
+    }
+    .socialmedia a:hover{
+        color:red
+    }
+/* footer end */
+.redcolor{
+    color: red;
+}
+.comic{
+    border-bottom: 3px ridge red;
+    font-size: 6vh;
+}
+.welcome{
+    /* color: #171717; */
+    color:white;
+    font-weight: 700;
+}
+
+/* login page  */
+.contentform{
+    min-height: calc(100vh - 120px);
+    /* padding: 120px 50px 60px 50px;   */
+    padding: 60px 0px 0px 0px;  
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;       
+}
+.contentform .cardleft{
+    /* background-color: green; */
+    flex-basis: 60%;
+    background-image: url('../images/dragon22.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.contentform .cardright{
+    flex-basis: 40%;
+    margin: 60px 50px 60px 0px;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentform .cardright{
+
+}
+
+
+
+@media only screen and (max-width: 660px) {
+    .navbar .linkside {
+        display: none;
+    }
+    .navbar .logoside {
+        flex-basis: 100%;
+        }
+    .contentform .cardleft{
+        flex-basis: 0%;
+    }
+    .contentform .cardright{
+        flex-basis: 100%;
+        margin-left: 50px;
+    }
+}
+@media only screen and (max-width: 400px) {
+}
